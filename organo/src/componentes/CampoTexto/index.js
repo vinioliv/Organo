@@ -4,7 +4,8 @@ const CampoTexto = (props) => {
 
 
     const aoDigitado = (evento) => {
-        props.aoAlterado(evento)
+        props.aoAlterado(evento.target.value)
+        
     }
     return(
         <div className="campo-texto">
